@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="I2ZbWzId4BgLTCd6_v0Y" name="ページ-1">
+    <mxGraphModel dx="1263" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=22;fontStyle=1;fontColor=#202124;" value="GAS 業務自動化ハブ" vertex="1">
+          <mxGeometry height="50" width="1100" x="101" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#34A853;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="530" width="320" x="72" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#7248B9;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="530" width="360" x="472" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#4285F4;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="640" width="320" x="912" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;" value="① 期限管理リマインダー" vertex="1">
+          <mxGeometry height="40" width="300" x="82" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7248B9;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;" value="② フォーム自動振り分け" vertex="1">
+          <mxGeometry height="40" width="340" x="482" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;" value="③ AI レビュー自動分析" vertex="1">
+          <mxGeometry height="40" width="300" x="922" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google スプレッドシート&#xa;A列: 会社名 / B列: 期限日" vertex="1">
+          <mxGeometry height="60" width="260" x="102" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontColor=#424242;fontSize=12;fontStyle=0;align=center;" value="時間主導型トリガー&#xa;毎日 9:00 JST" vertex="1">
+          <mxGeometry height="55" width="260" x="102" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google Apps Script&#xa;deadline-reminder.gs" vertex="1">
+          <mxGeometry height="60" width="260" x="102" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A154B;strokeColor=#3C1140;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Slack 通知&#xa;10日前・3日前・当日" vertex="1">
+          <mxGeometry height="60" width="260" x="102" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7248B9;strokeColor=#5E35B1;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google フォーム&#xa;部署選択（営業部 / 総務部 / 人事部）" vertex="1">
+          <mxGeometry height="60" width="300" x="502" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontColor=#424242;fontSize=12;fontStyle=0;align=center;" value="フォーム送信トリガー" vertex="1">
+          <mxGeometry height="55" width="300" x="502" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google Apps Script&#xa;form-router.gs" vertex="1">
+          <mxGeometry height="60" width="300" x="502" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=11;fontStyle=1;align=center;" value="営業部&#xa;シート" vertex="1">
+          <mxGeometry height="60" width="90" x="502" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=11;fontStyle=1;align=center;" value="総務部&#xa;シート" vertex="1">
+          <mxGeometry height="60" width="90" x="607" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=11;fontStyle=1;align=center;" value="人事部&#xa;シート" vertex="1">
+          <mxGeometry height="60" width="90" x="712" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google スプレッドシート&#xa;A列: 顧客レビュー（入力）" vertex="1">
+          <mxGeometry height="60" width="260" x="942" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontColor=#424242;fontSize=12;fontStyle=0;align=center;" value="手動実行&#xa;（analyzeAllReviews）" vertex="1">
+          <mxGeometry height="55" width="260" x="942" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=#1A73E8;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Google Apps Script&#xa;ai-review-analyzer.gs" vertex="1">
+          <mxGeometry height="60" width="260" x="942" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8E75B2;strokeColor=#7248B9;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="Gemini API&#xa;gemini-1.5-flash" vertex="1">
+          <mxGeometry height="60" width="260" x="942" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;strokeColor=#2E7D32;fontColor=#ffffff;fontSize=12;fontStyle=1;align=center;" value="分析結果を自動書き込み&#xa;B列: 感情分類 / C列: 要約" vertex="1">
+          <mxGeometry height="60" width="260" x="942" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="e10_11" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#34A853;" target="11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11_12" edge="1" parent="1" source="11" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#9E9E9E;" target="12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12_13" edge="1" parent="1" source="12" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#4285F4;" target="13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20_21" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#7248B9;" target="21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21_22" edge="1" parent="1" source="21" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#9E9E9E;" target="22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22_23" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#4285F4;exitX=0.15;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22_24" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#4285F4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22_25" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#4285F4;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30_31" edge="1" parent="1" source="30" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#34A853;" target="31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31_32" edge="1" parent="1" source="31" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#9E9E9E;" target="32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32_33" edge="1" parent="1" source="32" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#4285F4;fontSize=10;fontStyle=1;fontColor=#4285F4;" target="33" value="API 呼び出し">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33_34" edge="1" parent="1" source="33" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;strokeColor=#8E75B2;fontSize=10;fontStyle=1;fontColor=#8E75B2;" target="34" value="分類・要約を返却">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
