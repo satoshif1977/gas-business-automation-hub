@@ -143,6 +143,22 @@ gas-business-automation-hub/
 
 ---
 
+## 開発者向けノート
+
+本リポジトリは、非エンジニアの方でもブラウザ上のコピー&ペーストのみで簡単に導入できるよう、あえてシンプルな `.gs` ファイル構成にしています。
+`clasp`（GAS 公式 CLI）や TypeScript を用いたローカル開発環境の構築は不要です。
+
+エンジニアが本番運用に向けて拡張する場合は、以下の構成への移行を推奨します：
+
+```bash
+# claspを使ったローカル開発環境の構築
+npm install -g @google/clasp
+clasp login
+clasp clone <スクリプトID>
+```
+
+---
+
 ## 関連リポジトリ
 
 - [aws-bedrock-agent](https://github.com/satoshif1977/aws-bedrock-agent) - Bedrock Agent + Lambda FAQ ボット（Terraform）
