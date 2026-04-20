@@ -1,4 +1,8 @@
-# gas-business-automation-hub
+<div align="center">
+  <img src="docs/gas_logo.png" alt="GAS Hub Logo" width="100" />
+
+  ![バナー](docs/gas_banner.png)
+</div>
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)
