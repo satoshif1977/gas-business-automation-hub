@@ -20,7 +20,7 @@ const ANALYZER_PROPS = {
 
 /** Gemini API設定 */
 const GEMINI_CONFIG = {
-  MODEL: 'gemini-1.5-flash',
+  MODEL: 'gemini-2.0-flash',
   API_BASE_URL: 'https://generativelanguage.googleapis.com/v1beta/models',
   MAX_RETRIES: 3,
   RETRY_INTERVAL_MS: 1000,
