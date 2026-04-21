@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es2020": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "globals": {
+    "SpreadsheetApp": "readonly",
+    "UrlFetchApp": "readonly",
+    "PropertiesService": "readonly",
+    "Logger": "readonly",
+    "FormApp": "readonly",
+    "GmailApp": "readonly",
+    "Utilities": "readonly",
+    "Session": "readonly",
+    "DriveApp": "readonly",
+    "HtmlService": "readonly",
+    "console": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "no-console": "off",
+    "semi": ["error", "always"],
+    "no-trailing-spaces": "error"
+  }
+}

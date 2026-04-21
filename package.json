@@ -1,0 +1,12 @@
+{
+  "name": "gas-business-automation-hub",
+  "version": "1.0.0",
+  "description": "Google Apps Script business automation tools",
+  "private": true,
+  "scripts": {
+    "lint": "eslint '*.gs'"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
