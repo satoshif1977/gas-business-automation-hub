@@ -4,6 +4,7 @@
   ![バナー](docs/gas_banner.png)
 </div>
 
+![CI](https://github.com/satoshif1977/gas-business-automation-hub/actions/workflows/ci.yml/badge.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat&logo=google&logoColor=white)
