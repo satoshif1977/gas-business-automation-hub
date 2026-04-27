@@ -144,9 +144,10 @@ gas-business-automation-hub/
 
 ## お問い合わせ・カスタマイズ依頼
 
-カスタマイズや導入サポートのご依頼は、クラウドワークスのプロフィールからご連絡ください。
+カスタマイズや導入サポートのご依頼は、GitHub の Issues または Developers.IO からお気軽にどうぞ。
 
-[クラウドワークス プロフィール（リンクは後で設定）]
+- [GitHub Issues](https://github.com/satoshif1977/gas-business-automation-hub/issues)
+- [Developers.IO プロフィール](https://dev.classmethod.jp/author/fujimura-satoshi/)
 
 ---
 
