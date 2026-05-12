@@ -6,6 +6,7 @@
 
 ![CI](https://github.com/satoshif1977/gas-business-automation-hub/actions/workflows/ci.yml/badge.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat&logo=google&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
@@ -30,11 +31,14 @@
 
 ## 収録ツール一覧
 
-| # | ツール名 | できること | ファイル |
-|---|---|---|---|
-| ① | 期限管理リマインダー | 契約・支払期限をSlackへ自動通知（10日前・3日前・当日） | `deadline-reminder.gs` |
-| ② | フォーム自動振り分け | フォーム回答を部署別シートへ自動転記 | `form-router.gs` |
-| ③ | AIレビュー自動分析 | 顧客の声をGemini AIが自動分類・要約 | `ai-review-analyzer.gs` |
+| # | ツール名 | できること | GS版 | TypeScript版 |
+|---|---|---|---|---|
+| ① | 期限管理リマインダー | 契約・支払期限をSlackへ自動通知 | `deadline-reminder.gs` | `src-ts/deadline-reminder.ts` |
+| ② | フォーム自動振り分け | フォーム回答を部署別シートへ自動転記 | `form-router.gs` | `src-ts/form-router.ts` |
+| ③ | AIレビュー自動分析 | 顧客の声をGemini AIが自動分類・要約 | `ai-review-analyzer.gs` | `src-ts/ai-review-analyzer.ts` |
+
+> **GS版（`.gs`）と TypeScript版（`src-ts/`）を並置実装。**
+> 同じロジックを両言語で確認でき、型注釈による安全な GAS 開発の実例として参照できます。
 
 ---
 

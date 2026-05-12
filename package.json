@@ -4,9 +4,12 @@
   "description": "Google Apps Script business automation tools",
   "private": true,
   "scripts": {
-    "lint": "eslint '*.gs'"
+    "lint": "eslint '*.gs'",
+    "typecheck": "tsc --noEmit -p src-ts/tsconfig.json"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "@types/google-apps-script": "^1.0.83",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
   }
 }
