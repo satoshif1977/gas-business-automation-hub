@@ -171,6 +171,46 @@ clasp clone <スクリプトID>
 
 ---
 
+## トラブルシューティング
+
+| 症状 | 原因 | 対処法 |
+|---|---|---|
+| Slack 通知が届かない | Webhook URL が未設定 | スクリプトプロパティ `SLACK_WEBHOOK_URL` に正しい URL を設定 |
+| Gemini API で `400 Bad Request` | API キーが無効またはクォータ超過 | 個人の `@gmail.com` アカウントの API キーを使用（Google Workspace アカウントは無料枠なし） |
+| フォーム振り分けが機能しない | トリガーが未設定 | Apps Script エディタ → トリガー → `onFormSubmit` を「フォーム送信時」に設定 |
+| `initializeSettings()` でエラー | スクリプトプロパティへの承認が未完了 | 実行後に表示される承認ダイアログを確認して許可する |
+
+---
+
+## ローカル開発・テスト方法
+
+### GAS エディタでの単体実行
+
+```
+1. Google スプレッドシート → 拡張機能 → Apps Script
+2. 関数を選択（例: sendDeadlineReminders）
+3. 「実行」ボタンをクリック
+4. 実行ログで結果を確認
+```
+
+### TypeScript 版のビルド確認
+
+```bash
+npm install
+npx tsc --noEmit    # コンパイルエラー確認
+```
+
+### 期限管理リマインダーのテスト用データ
+
+| A列（案件名） | B列（期限日） | 期待する通知 |
+|---|---|---|
+| テスト契約 | 今日 + 9日後 | 「10日前」通知が Slack に届く |
+| テスト支払 | 今日 | 「当日」通知が Slack に届く |
+
+手動で `sendDeadlineReminders()` を実行して確認してください。
+
+---
+
 ## 関連リポジトリ
 
 - [aws-bedrock-agent](https://github.com/satoshif1977/aws-bedrock-agent) - Bedrock Agent + Lambda FAQ ボット（Terraform）
