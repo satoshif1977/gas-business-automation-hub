@@ -216,3 +216,7 @@ npx tsc --noEmit    # コンパイルエラー確認
 - [aws-bedrock-agent](https://github.com/satoshif1977/aws-bedrock-agent) - Bedrock Agent + Lambda FAQ ボット（Terraform）
 - [aws-rag-knowledgebase](https://github.com/satoshif1977/aws-rag-knowledgebase) - S3 + Bedrock RAG 構築
 - [aws-eventbridge-lambda](https://github.com/satoshif1977/aws-eventbridge-lambda) - EventBridge + Lambda イベント駆動（Terraform）
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for vulnerability reporting and security policies.
