@@ -1,0 +1,9 @@
+{
+  "extends": "./src-ts/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "./dist-test"
+  },
+  "include": ["src-ts/**/*.ts"]
+}
