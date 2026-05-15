@@ -110,6 +110,21 @@ Step 3: APIキー / Webhook URL を設定して完了
 
 詳細な手順は [docs/setup-guide.md](./docs/setup-guide.md) を参照してください。
 
+### Gemini API キーの取得方法
+
+1. [Google AI Studio](https://aistudio.google.com/) を開く
+2. **個人の `@gmail.com` アカウント**でログイン（Google Workspace アカウントは無料枠なし）
+3. 左メニュー「Get API key」→「Create API key」→ キーをコピー
+4. GAS スクリプトエディタ → 「プロジェクトの設定」→「スクリプトプロパティ」に追加
+
+| プロパティ名 | 値 |
+|---|---|
+| `GEMINI_API_KEY` | 取得した API キー |
+| `SLACK_WEBHOOK_URL` | Slack Incoming Webhook URL（任意） |
+| `NOTIFY_DAYS` | 通知日数（例: `10,3,1`） |
+
+> **注意**: Google Workspace（会社アカウント）では Gemini API の無料枠が利用できない場合があります。個人 `@gmail.com` での取得を推奨します。
+
 ---
 
 ## 導入事例イメージ
