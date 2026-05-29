@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-05-29
+
+### Changed
+- CI: `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` 追加（GitHub Actions の Node.js 20→24 強制切り替え対応）
+- Dependabot: `actions/setup-node` v4→v6・`actions/checkout` v4→v6・`@types/google-apps-script` v1→v2・`ts-jest` v29.4.9→v29.4.11 を更新
+
 ## [1.3.0] - 2026-05-19
 
 ### Added
