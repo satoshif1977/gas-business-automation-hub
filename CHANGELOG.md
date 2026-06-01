@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-06-01
+
+### Added
+- ツール④ 週次レポートサマリー送信を追加（`report-summary.gs`）
+  - 週次スプレッドシートを集計し、完了率・担当者別進捗をメールで自動送信
+  - スクリプトプロパティで送信先メールアドレス・シート名を設定可能
+- TypeScript 並置実装追加（`src-ts/report-summary.ts`）
+  - `buildSummary` / `buildEmailContent` / `calcCompletionRate` を純粋関数として実装
+- Jest ユニットテスト追加（`src-ts/__tests__/report-summary.test.ts`）
+  - 14件追加・合計 43件でパス確認済み
+
 ## [1.4.0] - 2026-05-29
 
 ### Changed
