@@ -136,7 +136,7 @@ function _getOrCreateSheet(
  * 初回セットアップ用の関数。
  * スクリプトプロパティの初期値設定と「設定」シートの作成を行う。
  */
-function initializeSettings(): void {
+function initializeFormRouterSettings(): void {
   const props: GoogleAppsScript.Properties.Properties =
     PropertiesService.getScriptProperties();
 

@@ -37,13 +37,13 @@ const SENTIMENT_LABELS = {
 // ─── インターフェース ─────────────────────────────────────
 
 /** analyzeReview の戻り値 */
-interface AnalysisResult {
+export interface AnalysisResult {
   sentiment: string;
   summary: string;
 }
 
 /** Gemini API レスポンスの型 */
-interface GeminiResponse {
+export interface GeminiResponse {
   candidates: Array<{
     content: {
       parts: Array<{ text: string }>;
@@ -65,7 +65,7 @@ interface GeminiRequestBody {
 /**
  * A列の全レビューを分析してB列・C列に結果を書き込む。
  */
-function analyzeAllReviews(): void {
+export function analyzeAllReviews(): void {
   const apiKey: string | null = _getApiKey();
   if (!apiKey) return;
 
@@ -124,7 +124,7 @@ function analyzeAllReviews(): void {
 /**
  * アクティブな行のレビューのみを分析する（単一行処理用）。
  */
-function analyzeCurrentRow(): void {
+export function analyzeCurrentRow(): void {
   const apiKey: string | null = _getApiKey();
   if (!apiKey) return;
 
@@ -233,7 +233,7 @@ function _analyzeReview(
  * @param reviewText 分析対象のレビューテキスト
  * @returns プロンプト文字列
  */
-function _buildPrompt(reviewText: string): string {
+export function _buildPrompt(reviewText: string): string {
   return `以下の顧客レビューを分析してください。
 
 【レビュー】
@@ -253,7 +253,7 @@ ${reviewText}
  * @param json Gemini APIのレスポンスJSON
  * @returns 分析結果。パース失敗時は null
  */
-function _parseGeminiResponse(json: GeminiResponse): AnalysisResult | null {
+export function _parseGeminiResponse(json: GeminiResponse): AnalysisResult | null {
   try {
     const rawText: string = json.candidates[0].content.parts[0].text.trim();
 
@@ -286,7 +286,7 @@ function _parseGeminiResponse(json: GeminiResponse): AnalysisResult | null {
 /**
  * スクリプトプロパティの初期値を設定する。初回セットアップ時に一度だけ実行する。
  */
-function initializeSettings(): void {
+export function initializeSettings(): void {
   const props: GoogleAppsScript.Properties.Properties =
     PropertiesService.getScriptProperties();
   props.setProperties({

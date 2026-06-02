@@ -163,7 +163,7 @@ function _sendSlackNotification(
  * スクリプトプロパティの初期値を設定する。
  * 初回セットアップ時に一度だけ実行する。
  */
-function initializeSettings(): void {
+function initializeDeadlineSettings(): void {
   const props: GoogleAppsScript.Properties.Properties =
     PropertiesService.getScriptProperties();
 
