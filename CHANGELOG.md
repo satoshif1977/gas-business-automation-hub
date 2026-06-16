@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-06-16
+
+### Changed
+- @types/google-apps-script 2.0.9 -> 2.0.11
+
 ## [1.5.0] - 2026-06-01
 
 ### Added
