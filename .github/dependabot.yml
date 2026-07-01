@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    ignore:
+      # ESLint v9+ は設定ファイル形式が破壊的変更のため v8 系に固定
+      - dependency-name: "eslint"
+        versions: [">=9.0.0"]
 
   - package-ecosystem: "github-actions"
     directory: "/"

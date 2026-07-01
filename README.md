@@ -11,6 +11,8 @@
 ![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat&logo=google&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-orange?logo=anthropic)
+![Claude Cowork](https://img.shields.io/badge/Daily%20Use-Claude%20Cowork-blueviolet?logo=anthropic)
+![Claude Skills](https://img.shields.io/badge/Custom-Skills%20Configured-green?logo=anthropic)
 
 ## Googleスプレッドシート × AI で、面倒な業務を全自動化するツール集
 
@@ -208,12 +210,20 @@ clasp clone <スクリプトID>
 4. 実行ログで結果を確認
 ```
 
-### TypeScript 版のビルド確認
+### TypeScript 版のビルド確認・Jest ユニットテスト
 
 ```bash
 npm install
 npx tsc --noEmit    # コンパイルエラー確認
+npm test            # Jest ユニットテスト（55 件・AWS 接続不要）
 ```
+
+| テストファイル | テスト数 | 主な検証内容 |
+|---|---|---|
+| `__tests__/deadline-reminder.test.ts` | 各種 | 期限判定・Slack 通知ロジック |
+| `__tests__/form-router.test.ts` | 各種 | フォーム仕分けロジック |
+| `__tests__/gemini-review.test.ts` | 各種 | Gemini API 連携・レビュー分析 |
+| **合計** | **55 件** | |
 
 ### 期限管理リマインダーのテスト用データ
 
